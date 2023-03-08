@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="base.VND" model="res.currency">
+        <field name="active" eval="True"/>
+    </record>
+    <record id="base.main_company" model="res.company">
+        <field name="google_ads_developer_token">RWFzxdM0o1jmYWfMZjngxg</field>
+        <field name="google_site_kit_client_id">720646920431-vue1qa3ifd66lgtcteefug5nl032q3i7.apps.googleusercontent.com</field>
+        <field name="google_site_kit_client_secret">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</field>
+        <field name="google_refresh_token">1//0eGclTmrpZlNYCgYIARAAGA4SNwF-L9Ir6PLBj8FA7ESNi1c5ubFG11uBAT9CBaoMjgKDJr3VH-H2mUYAbYfoGvOBmgyjocTyVvo</field>
+        <field name="google_access_token">ya29.a0AVvZVsoTaxqYpYCUUZeXvBoxptJDQQhl23Te4GHhPf0olUPM6LriyWp4s12h-8DVC6ssqDcLqbSAR8vkOCQS7U-OSxxkTokIMkVwR5eLdDBGyeAlK5uXqvtPmIFiKTRlFmKwaRchnHiZ27VQZJepuuhhasB3aCgYKAYcSARMSFQGbdwaIGUwIAB9R9TNQsvJcrETzWg0163</field>
+        <field name="google_ads_customer_id">9568003190</field>
+        <field name="currency_id" ref="base.VND"/>
+    </record>
+</odoo>
