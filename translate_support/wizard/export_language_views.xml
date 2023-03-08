@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="wizard_lang_export" model="ir.ui.view">
+            <field name="name">Export Language</field>
+            <field name="model">export.language</field>
+            <field name="arch" type="xml">
+                <form string="Export Translations">
+                    <field name="name" invisible="1" />
+                    <group string="Export Settings">
+                        <field name="lang_id" />
+                        <field name="module_id" />
+                    </group>
+                    <button name="act_getfile" string="Export" type="object" class="btn-primary"
+                        data-hotkey="q" />
+                    <button special="cancel" data-hotkey="z" string="Cancel" type="object"
+                        class="btn-secondary" />
+                </form>
+            </field>
+        </record>
+
+        <record id="action_wizard_language_export" model="ir.actions.act_window">
+            <field name="name">Export Language</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">export.language</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+        <menuitem action="action_wizard_language_export" id="menu_wizard_language_export"
+            parent="base.menu_translation_export" />
+    </data>
+</odoo>
