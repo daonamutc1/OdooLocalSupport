@@ -25,7 +25,7 @@ This module is used for keyword planning:
     ],
     'installable': True,
     'application': False,
-    'auto_install': True,
+    'auto_install': False,
     'price': 99.9,
     'currency': 'EUR',
     'license': 'OPL-1',

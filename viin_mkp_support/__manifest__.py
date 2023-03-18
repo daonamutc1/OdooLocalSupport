@@ -28,7 +28,7 @@ This module is used for keyword planning:
         # "data/marketing.keyword.ads.historical.metrics.csv"
     ],
     'demo': [
-        'data/demo.xml',
+        # 'data/demo.xml',
         'data/res.country.csv',
     ],
     'pre_init_hook': 'pre_init_hook',
