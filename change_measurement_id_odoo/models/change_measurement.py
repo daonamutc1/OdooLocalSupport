@@ -9,7 +9,7 @@ from odoo import models, fields
 
 headers = {"Content-Type": "application/json"}
 
-
+TIMEOUT = 30
 class ChangeMeasurement(models.Model):
     _name = 'change.measurement'
     _description = 'Change Measurement'
@@ -37,7 +37,7 @@ class ChangeMeasurement(models.Model):
                 "params": {},
                 "id": random.randint(0, 100000000),
             })
-            response = requests.get(json_endpoint, data=payload, headers=headers, timeout=3)
+            response = requests.get(json_endpoint, data=payload, headers=headers, timeout=TIMEOUT)
             return response.json()['result'][0]
         except Exception:
             return False
@@ -51,7 +51,7 @@ class ChangeMeasurement(models.Model):
         payload = self.get_json_payload("common", "login", db_name, username, password)
 
         json_endpoint = "%s/jsonrpc" % server_url
-        response = requests.post(json_endpoint, data=payload, headers=headers, timeout=3)
+        response = requests.post(json_endpoint, data=payload, headers=headers, timeout=TIMEOUT)
         user_id = response.json()['result']
 
         return db_name, user_id, password
@@ -80,12 +80,12 @@ class ChangeMeasurement(models.Model):
             },
             "id": random.randint(0, 100000000),
         })
-        requests.post(json_endpoint, data=payload, headers=headers, timeout=3).json()
+        requests.post(json_endpoint, data=payload, headers=headers, timeout=TIMEOUT).json()
         print('done change: %s' % (server_url))
 
     def crawl_remote_url(self, branch_url):
         try:
-            respose_contents = requests.get(branch_url, timeout=3)
+            respose_contents = requests.get(branch_url, timeout=TIMEOUT)
             respose_contents.encoding = 'utf-8'
             respose_contents_html = html.fromstring(respose_contents.content)
             link_instances = []
@@ -100,7 +100,7 @@ class ChangeMeasurement(models.Model):
 
     def crawl_list_remote(self):
 
-        respose_contents = requests.get('https://runbot.odoo.com', timeout=3)
+        respose_contents = requests.get('https://runbot.odoo.com', timeout=TIMEOUT)
         respose_contents.encoding = 'utf-8'
         respose_contents_html = html.fromstring(respose_contents.content)
 
