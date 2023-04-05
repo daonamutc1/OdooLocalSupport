@@ -40,8 +40,8 @@ def _import_sem_keyword_ads_historical_metrics_csv(env):
 def post_init_hook(cr, registry):
     env = api.Environment(cr, SUPERUSER_ID, {})
     # active VietNam
-    tools.convert_file(env.cr, 'viin_mkp_support', 'data/sem.keyword.csv', None,
-                       mode='init', noupdate=True, kind='init')
+    # tools.convert_file(env.cr, 'viin_mkp_support', 'data/sem.keyword.csv', None,
+    #                    mode='init', noupdate=True, kind='init')
     # _import_sem_keyword_ads_historical_metrics_csv(env)
 
 

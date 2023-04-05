@@ -10,6 +10,8 @@ from odoo import models, fields
 headers = {"Content-Type": "application/json"}
 
 TIMEOUT = 30
+
+
 class ChangeMeasurement(models.Model):
     _name = 'change.measurement'
     _description = 'Change Measurement'

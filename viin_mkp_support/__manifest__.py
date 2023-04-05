@@ -22,20 +22,19 @@ This module is used for keyword planning:
     'sequence': 27,
     'category': 'Marketing',
     'version': '0.1',
-    'depends': ['viin_mkp_google_site_kit'],
+    'depends': ['viin_google_ads_mcc', 'viin_mkp_google_site_kit'],
     'data': [
         # "data/marketing.keyword.csv",
         # "data/marketing.keyword.ads.historical.metrics.csv"
     ],
     'demo': [
-        # 'data/demo.xml',
+        'data/demo.xml',
         'data/res.country.csv',
     ],
-    'pre_init_hook': 'pre_init_hook',
     'post_init_hook': 'post_init_hook',
     'installable': True,
     'application': False,
-    'auto_install': True,
+    'auto_install': False,
     'price': 99.9,
     'currency': 'EUR',
     'license': 'OPL-1',

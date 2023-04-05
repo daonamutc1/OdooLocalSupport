@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="google_translate_demo" model="translate.provider">
+        <field name="name">Google Translate</field>
+        <field name="sequence">1</field>
+        <field name="active" eval="True" />
+        <field name="translate_provider">google_translate</field>
+        <field name="google_cloud_project_id">trusty-sentinel-382901</field>
+        <field name="google_cloud_private_key_id">9144895409e8a6cc38e6ba947a5890ddae16ce31</field>
+        <field name="google_cloud_private_key">-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDHg2gvGcNSigte\n3bmIeVJlGJvKSwweSLvJtvGkLLYSVlQox6BjUNowNNqNVoBNgBSPZ+KlcRFT3EU1\n5vnLujh2uH7ph5zSSSBJD0BeOJWwndJcRO7EzJqmng6hoVEycMPdYLxbRO4Rhdb8\nqT+CrAGYsSACL63MFyYUv5ZkMJVwyZPq+YDuOOwJYOhbvZ8W42+38Q6FcxQRRiRK\nNTNMlPjJM5SfMzP7OKf7iRQTKhWsFvAgQOCbDi+1T3j+9Is1jRO+4ETjX9UWBcMq\nP9N/adPRGsaHZr3pymFvwwtUlz6FLTwoXVOVS6a/8rvBkHW8FkdwXaU/N6jLrEBR\nNFx4hC9xAgMBAAECggEAAOgqG5JNTuOj8v2+bHSv7EsepJGo9iRHfwtVV6hnK95d\n/V3dVUY86UL8PiM6a9/DeClobTvko8U/DUrFybUvF4V1xWyUrzU4FkAhZaw+xfHZ\ntT12ky9vTocuZgt8YBnSHubKXf6j6ssS2jNcv6ScUNjeEXrgM9393tJ5UqHdgNWi\n4Bgqyfi7kZjtawOuLdhC9QTZzh/iFlNGVi/Ij9KoeSqomhuxeZsajUQLlMqZ0taX\ndgBozw3IGRlbPgczja9CuaJLutYUtlzDjPd9AEjG/7bSpQ7zhIN7Lai6EofBh6K1\n6bhiNwx7kEwRl6XRA7V6B66qHK36bQe5dmMz2lm5HwKBgQDz2Wm45W8qXYNZv2kQ\nFMdNwx8GbIbTeNAuUywKU297tSiGhYpsLMGqniPyHs5vBHZ99XiOhIqWzpiSVV2B\nfNpQNULbqNitExjxdP4B/OB3/t0gJSEkuA169+d1NJ2xFGUN/0OGxhLTK64Fabbq\n1Y37Rjz3V/EydW9OyCMUeRWITwKBgQDRdG+n8oMrWG0OGiPs09eOFEQL5lE3OK0T\n50rbzFt1fqkzxKx9eTxVIWo/khBb8ZqEZCBlHHOnnNl/S8wpW4hjuYxtU3CZfoUV\np/1bHX7jmw1NzRek02Hm8v9665247kxOcg/5H76zzPUlRV2+Lo2tkGUWnsEsKvgz\nseqpZwEcPwKBgE49oDJ3S2fogVC2ndtPD3Pf+4BwKgKIbSOwBB18D/U9dzdSecuj\nwLAh9Z6mS85LPEnGDVyNInqo50NsqIf3q4S40i7wyjUeP46Z3zZ8EPnviLvbrfq+\nI3UlPdrZew9qX9JR6TTBMSEYjsml1c8bnmbVbpJeYUGzdHdut/LFtyb5AoGANQSh\nIsT7OOSYLkKlp1P0My2kD9ML6ct53Bjm1P5EhFg8YjM9akFe6TmdGFxTscJVV3+0\nx4NNLzc/wr4f/rQBsSSNjDrbvK7O5y1vrzmnHdvooTHx8zHijUAjNS0g7me7fvvW\nWTwU3JRb1URat0I3cKClRfWHdjOmQgeeG6VMHacCgYA44Mwi4yCLLP33y3Y0wyb8\n5oVkC8VmZ3gdtGSnVpry/stqsBlLO6mQtnUZQZboh+0cZBG+784I3dG4X4qt4j/V\nHshln9hi83fNmDJu5KKH1P6yBV/542ph0tChCFaAyrG3NwJwgN6jZgMY3AZq3X4T\nc5Zn9jrPjphf2pwIwfneJg==\n-----END PRIVATE KEY-----\n</field>
+        <field name="google_cloud_client_email">local-dev@trusty-sentinel-382901.iam.gserviceaccount.com</field>
+        <field name="google_cloud_client_id">109759377702232142641</field>
+    </record>
+</odoo>
